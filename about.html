@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About Me</title>
+<style>
+  /* The CSS is the same as the home page for consistency */
+  body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+  }
+  .container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+  }
+  header {
+    background: #508bb3;
+    color: white;
+    padding-top: 30px;
+    min-height: 70px;
+    border-bottom: #e8491d 3px solid;
+  }
+  header a {
+    color: #ffffff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 16px;
+  }
+  header ul {
+    padding: 0;
+    list-style: none;
+  }
+  header li {
+    float: left;
+    display: inline;
+    padding: 0 20px 0 20px;
+  }
+  header #branding {
+    float: left;
+  }
+  header #branding h1 {
+    margin: 0;
+  }
+  header nav {
+    float: right;
+    margin-top: 10px;
+  }
+  header .highlight, header .current a {
+    color: #e8491d;
+    font-weight: bold;
+  }
+  header a:hover {
+    color: #ffffff;
+    font-weight: bold;
+  }
+  section {
+    padding: 20px 0;
+    border-bottom: 1px solid #e8491d;
+  }
+  section .content {
+    width: 70%;
+    float: left;
+  }
+  section .sidebar {
+    width: 30%;
+    float: right;
+  }
+  footer {
+    background: #333333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+  }
+</style>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <div id="branding">
+        <h1><span class="highlight"></span>ArmanSite</h1>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li class="current"><a href="about.html">About</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section class="about">
+    <div class="container">
+      <div class="content">
+        <h2>About Me</h2>
+        <p>Hello, I am Arman, I like Computers, Old Tech, and programming.</p>
+      </div>
+      <div class="sidebar">
+        <h3>Stuff I recommend</h3>
+        <p>I like to do animations, I do recommend SFM [source filmmaker] for Posters and short films. Kdenlive is great, and davinci resolve. I personally use VS Code, and Visual Studio 2022.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="values">
+    <div class="container">
+      <h2>My Goal</h2>
+      <p>I wanna build great software, and make some animations in SFM.</p>
+    </div>
+  </section>
+
+</body>
+</html>
