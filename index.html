@@ -1,97 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>ArmanSite</title>
-<style>
-  body {
-    font-family: 'Arial', sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f4f4f4;
-  }
-  .container {
-    width: 80%;
-    margin: auto;
-    overflow: hidden;
-  }
-  header {
-    background: #508bb3;
-    color: white;
-    padding-top: 30px;
-    min-height: 70px;
-    border-bottom: #e8491d 3px solid;
-  }
-  header a {
-    color: #ffffff;
-    text-decoration: none;
-    text-transform: uppercase;
-    font-size: 16px;
-  }
-  header ul {
-    padding: 0;
-    list-style: none;
-  }
-  header li {
-    float: left;
-    display: inline;
-    padding: 0 20px 0 20px;
-  }
-  header #branding {
-    float: left;
-  }
-  header #branding h1 {
-    margin: 0;
-  }
-  header nav {
-    float: right;
-    margin-top: 10px;
-  }
-  header .highlight, header .current a {
-    color: #e8491d;
-    font-weight: bold;
-  }
-  header a:hover {
-    color: #ffffff;
-    font-weight: bold;
-  }
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ArmanSite - Arman's Personal Website</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: flex-start; /* Align items to the top */
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
+        }
+        .content {
+            text-align: center;
+            margin-top: 20px; /* Add margin to the top for better visibility */
+        }
+        h1 {
+            color: black; /* Ensure the text is a visible color */
+        }
+    </style>
 </head>
 <body>
-  <header>
-    <div class="container">
-      <div id="branding">
-        <h1><span class="highlight"></span>ArmanSite</h1>
-      </div>
-      <nav>
-        <ul>
-          <li class="current"><a href="index.html">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="services.html">Services</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
-      </nav>
+    <div class="content">
+        <h1>Arman's Personal Website</h1>
+        <br>
+        <img src="images/munitionne.png" width="300" height="300" alt="My Signature Cosmetic">
+        <br>
+        <i>My Signature Cosmetic</i>
+
+        <b><i><p>My Socials</p></i></b>
+
+        <div class="c2">
+            <a href="https://www.youtube.com/channel/UCg0oh7mDOinFlMXJS1Q1v_A">YouTube</a> |
+            <a href="https://nexustech.freewebhostmost.com">NexusTech Website</a> |
+            <a href="https://www.bitview.net/user/ArmanNita">Bitview</a> |
+            <a href="https://github.com/nexustech24">GitHub (Biz)</a> |
+            <p>And...</p>
+            <img src="images/no-facebook.svg" alt="Well, you get the point">
+
+            <i><u><b><h2>Software I recommend</h2></b></u></i>
+
+            <p>Here is a list of Software I recommend</p>
+
+            <ul>
+                <li>Vim or Neovim (for quick text editing)</li>
+                <li>VSCodium (A FOSS and Libre version of VSCode)</li>
+                <li>OBS Studio (For Recording)</li>
+                <li>Brave Web Browser</li>
+                <li>Firefox Web Browser</li>
+                <li>Ungoogled Chromium (Chromium, but there is no google.)</li>
+                <li>Linux Distros (Fedora, Linux Mint, Debian, Arch)</li>
+                <li>Thunderbird E-Mail client.</li>
+                <li>Kdenlive Video Editor.</li>
+                <li>Shotcut Video Editor.</li>
+                <li>GIMP Image Editor.</li>
+                <li>InkScape (haven't tried it, but looks promising)</li>
+                <li>Steam for Video Games.</li>
+            </ul>
+        </div>
     </div>
-  </header>
-
-  <script>
-    // Simple animation example
-    window.onload = function() {
-      const branding = document.getElementById('branding');
-      let fontSize = 10;
-
-      function animate() {
-        fontSize++;
-        branding.style.fontSize = fontSize + 'px';
-
-        if (fontSize < 30) {
-          requestAnimationFrame(animate);
-        }
-      }
-
-      animate();
-    };
-  </script>
 </body>
 </html>
