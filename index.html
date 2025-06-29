@@ -4,53 +4,129 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MrHalfLife - Personal Website and About me</title>
-    <link href="/style.css" rel="stylesheet" type="text/css" media="all">
     <style>
+        html, body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+
         body {
             display: flex;
             justify-content: center;
-            align-items: flex-start; /* Align items to the top */
-            height: 100vh;
-            margin: 0;
-            background-color: #f0f0f0;
+            align-items: center;
+            flex-direction: column;
+            font-family: ms gothic, monospace;
+            font-size: 18px;
+            background-color: #1b1b1b;
+            color: #f2f2f2;
         }
-        .content {
+
+        @font-face {
+            font-family: 'synkopy';
+            src: url(Synkopy-Regular.otf);
+        }
+
+        p {
+            font-family: 'synkopy';
+        }
+
+        #container {
+            width: 800px;
+            margin: 0 auto;
             text-align: center;
-            margin-top: 20px; /* Add margin to the top for better visibility */
         }
-        h1 {
-            color: black; /* Ensure the text is a visible color */
+
+        #main {
+            width: 500px;
+            margin: 0 auto;
+            text-align: justify;
+            border: 3px double #FF6A00;
+            background: #2a2a2a;
+            padding: 10px;
+            color: #f2f2f2;
+        }
+
+        hr {
+            border: 0;
+            height: 1px;
+            background-image: linear-gradient(to right, rgba(255, 106, 0, 0), rgba(255, 106, 0, 0.75), rgba(255, 106, 0, 0));
+        }
+
+        @keyframes wiggle {
+            from { transform: scale(0.98); }
+            50% { transform: scale(1); }
+            to { transform: scale(0.98); }
+        }
+
+        #textlol {
+            font-size: 50px;
+            text-decoration: none;
+            transition: 0.4s;
+        }
+
+        #textlol:hover {
+            letter-spacing: 5px;
+        }
+
+        #links {
+            border: 1px solid #FF6A00;
+            text-align: center;
+            padding: 5px;
+            width: 500px;
+            margin: 0 auto;
+            background: #2a2a2a;
+        }
+
+        #links ul {
+            display: flex;
+            padding: 0;
+            margin: 0;
+            list-style-type: none;
+            justify-content: space-evenly;
+            flex-wrap: wrap;
+        }
+
+        a {
+            color: #FF6A00;
+            text-decoration: none;
+        }
+
+        a:hover {
+            color: #FFFFFF;
+            text-decoration: underline;
         }
     </style>
 </head>
 <body>
-    <div class="content">
-        <h1>MrHalfLife's Personal Website</h1>
-        <br>
+    <div id="container">
+        <h1 id="textlol">MrHalfLife's Personal Website</h1>
         <img src="images/gordon_alien_base.jpg" width="300" height="300" alt="My Signature Cosmetic">
         <br>
         <i>The profile picture on Matrix and Discord</i>
 
-        <b><i><p>My Socials</p></i></b>
+        <div id="main">
+            <h2><i><u>My Socials</u></i></h2>
+            <div id="links">
+                <ul>
+                    <li><a href="https://www.youtube.com/channel/UCg0oh7mDOinFlMXJS1Q1v_A">YouTube</a></li>
+                    <li><a href="https://mrhalflife.neocities.org/">Website</a></li>
+                    <li><a href="https://blips.club/MrHalfLife280">blips</a></li>
+                    <li><a href="https://github.com/MrHalfLife280">GitHub (Biz)</a></li>
+                </ul>
+                <p>And...</p>
+                <img src="images/no-facebook.svg" alt="Well, you get the point">
+            </div>
 
-        <div class="c2">
-            <a href="https://www.youtube.com/channel/UCg0oh7mDOinFlMXJS1Q1v_A">YouTube</a> |
-            <a href="https://mrhalflife.neocities.org/">Website</a> |
-            <a href="https://blips.club/MrHalfLife280">blips</a> |
-            <a href="https://github.com/MrHalfLife280">GitHub (Biz)</a> |
-            <p>And...</p>
-            <img src="images/no-facebook.svg" alt="Well, you get the point">
+            <hr>
 
+            <h2><i><u>About me:</u></i></h2>
+            <p>Hello I am Arman (you can call me MrHalfLife) and I am a programmer, and an old Tech messer. I usually write Software in my free time, or sometimes Animate in SFM.</p>
 
-            <i><u><b><h2>About me:</h2></b></u></i>
+            <hr>
 
-            <p>Hello I am Arman (you can call me MrHalfLife) and I am a programmer, and an old Tech messer. I usually write Software in my free time, or sometimes Animate in SFM</p>
-            
-
-            <i><u><b><h2>Software I recommend</h2></b></u></i>
-
+            <h2><i><u>Software I recommend</u></i></h2>
             <p>Here is a list of Software I recommend</p>
-
             <ul>
                 <li>Vim or Neovim (for quick text editing)</li>
                 <li>VSCodium (A FOSS and Libre version of VSCode)</li>
